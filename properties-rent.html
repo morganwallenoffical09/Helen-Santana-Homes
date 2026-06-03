@@ -3,86 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Homes For Rent | Helen Santana Homes</title>
-
+<title>Properties For Rent | Helen Santana Homes</title>
 <style>
 
+*{margin:0;padding:0;box-sizing:border-box}
+
 body{
-margin:0;
-font-family:Arial,sans-serif;
+font-family:Georgia,serif;
 background:#f5f5f5;
+color:#222;
 }
 
 header{
-background:#111;
-color:white;
-padding:40px;
-text-align:center;
-}
-
-header h1{
-margin:0;
-font-size:40px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
-padding:50px;
-max-width:1400px;
-margin:auto;
-}
-
-.card{
 background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.12);
-transition:.3s;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card img{
-width:100%;
-height:250px;
-object-fit:cover;
-}
-
-.content{
-padding:20px;
-}
-
-.content h3{
-margin-top:0;
-}
-
-.location{
-color:#666;
-margin-bottom:10px;
-}
-
-.features{
-margin:10px 0;
-}
-
-.price{
-font-size:28px;
+.logo{
+font-size:30px;
 font-weight:bold;
 color:#c9a227;
 }
 
-.button{
-display:inline-block;
-margin-top:15px;
-background:#111;
-color:white;
-padding:12px 20px;
+nav a{
 text-decoration:none;
+margin-left:20px;
+color:#222;
+font-weight:600;
+}
+
+.hero{
+height:55vh;
+background:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=2000') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero h1{
+background:rgba(0,0,0,.6);
+color:white;
+padding:20px 40px;
+font-size:55px;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+padding:60px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+}
+
+.property{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.property img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.info{
+padding:25px;
+}
+
+.rent{
+font-size:32px;
+font-weight:bold;
+color:#c9a227;
+margin:15px 0;
+}
+
+.features{
+margin-top:15px;
+line-height:1.8;
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:12px 25px;
 border-radius:5px;
+font-weight:bold;
 }
 
 footer{
@@ -95,89 +113,169 @@ margin-top:50px;
 
 </style>
 </head>
-
 <body>
-
 <header>
-<h1>Homes & Apartments For Rent</h1>
-<p>Helen Santana Homes</p>
+<div class="logo">Helen Santana Homes</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="properties-sale.html">For Sale</a>
+<a href="luxury-villas.html">Luxury Villas</a>
+<a href="gallery.html">Gallery</a>
+</nav>
 </header>
-
+<section class="hero">
+<h1>Luxury Rentals</h1>
+</section>
+<div class="container">
 <div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200">
-<div class="content">
-<h3>Luxury Downtown Apartment</h3>
-<p class="location">New York, NY</p>
-<p class="features">2 Bed • 2 Bath • Gym • Pool</p>
-<p class="price">$3,200/mo</p>
-<a class="button" href="contact.html">Request Viewing</a>
-</div>
-</div>
-
-<div class="card">
+<div class="property">
 <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200">
-<div class="content">
-<h3>Modern Family Rental</h3>
-<p class="location">Houston, TX</p>
-<p class="features">4 Bed • 3 Bath • Garage</p>
-<p class="price">$2,850/mo</p>
-<a class="button" href="contact.html">Request Viewing</a>
+<div class="info">
+<h2>Downtown Executive Apartment</h2>
+<p>Chicago, Illinois</p>
+<div class="rent">$3,200 / Month</div>
+<div class="features">
+3 Bedrooms • 2 Bathrooms • Balcony • Parking
+</div>
+<p>
+Modern city apartment featuring premium finishes,
+fitness center access, concierge service and skyline views.
+</p>
+<a class="whatsapp" href="https://wa.me/15708152665">Rent This Property</a>
 </div>
 </div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200">
-<div class="content">
-<h3>Luxury Villa Rental</h3>
-<p class="location">Los Angeles, CA</p>
-<p class="features">5 Bed • 4 Bath • Pool</p>
-<p class="price">$8,500/mo</p>
-<a class="button" href="contact.html">Request Viewing</a>
+<div class="property">
+<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200">
+<div class="info">
+<h2>Luxury Family Home</h2>
+<p>Dallas, Texas</p>
+<div class="rent">$4,800 / Month</div>
+<div class="features">
+4 Bedrooms • 3 Bathrooms • Garden • Garage
+</div>
+<p>
+Spacious family residence with upgraded kitchen,
+private backyard and excellent neighborhood amenities.
+</p>
+<a class="whatsapp" href="https://wa.me/15708152665">Rent This Property</a>
 </div>
 </div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200">
-<div class="content">
-<h3>Suburban Family Home</h3>
-<p class="location">Atlanta, GA</p>
-<p class="features">3 Bed • 2 Bath • Backyard</p>
-<p class="price">$2,400/mo</p>
-<a class="button" href="contact.html">Request Viewing</a>
-</div>
-</div>
-
-<div class="card">
+<div class="property">
 <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200">
-<div class="content">
-<h3>Executive Penthouse</h3>
-<p class="location">Miami, FL</p>
-<p class="features">3 Bed • 3 Bath • Ocean View</p>
-<p class="price">$6,900/mo</p>
-<a class="button" href="contact.html">Request Viewing</a>
+<div class="info">
+<h2>Premium Waterfront Condo</h2>
+<p>Miami, Florida</p>
+<div class="rent">$6,500 / Month</div>
+<div class="features">
+2 Bedrooms • 2 Bathrooms • Ocean View
+</div>
+<p>
+Luxury waterfront living with resort-style amenities,
+private beach access and panoramic ocean views.
+</p>
+<a class="whatsapp" href="https://wa.me/15708152665">Rent This Property</a>
 </div>
 </div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200">
-<div class="content">
-<h3>Luxury Condo</h3>
-<p class="location">Chicago, IL</p>
-<p class="features">2 Bed • 2 Bath • Parking</p>
-<p class="price">$2,950/mo</p>
-<a class="button" href="contact.html">Request Viewing</a>
+<div class="property">
+<img src="https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?w=1200">
+<div class="info">
+<h2>Modern Townhouse</h2>
+<p>Phoenix, Arizona</p>
+<div class="rent">$2,900 / Month</div>
+<div class="features">
+3 Bedrooms • 2 Bathrooms • Garage
+</div>
+<p>
+Contemporary townhouse with open floor plan,
+private patio and community pool access.
+</p>
+<a class="whatsapp" href="https://wa.me/15708152665">Rent This Property</a>
 </div>
 </div>
-
+<div class="property">
+<img src="https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=1200">
+<div class="info">
+<h2>Luxury Suburban Residence</h2>
+<p>Atlanta, Georgia</p>
+<div class="rent">$5,400 / Month</div>
+<div class="features">
+5 Bedrooms • 4 Bathrooms • Pool
 </div>
-
+<p>
+Elegant family home with spacious interiors,
+private pool and landscaped gardens.
+</p>
+<a class="whatsapp" href="https://wa.me/15708152665">Rent This Property</a>
+</div>
+</div>
+<div class="property">
+<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200">
+<div class="info">
+<h2>Executive Villa Rental</h2>
+<p>Las Vegas, Nevada</p>
+<div class="rent">$8,900 / Month</div>
+<div class="features">
+6 Bedrooms • 5 Bathrooms • Smart Home
+</div>
+<p>
+Luxury villa featuring a home theater,
+private gym and resort-style outdoor living.
+</p>
+<a class="whatsapp" href="https://wa.me/15708152665">Rent This Property</a>
+</div>
+</div>
+<div class="property">
+<img src="https://images.unsplash.com/photo-1600607687644-c7f34b5063b2?w=1200">
+<div class="info">
+<h2>Beachside Apartment</h2>
+<p>San Diego, California</p>
+<div class="rent">$4,200 / Month</div>
+<div class="features">
+2 Bedrooms • 2 Bathrooms • Ocean Views
+</div>
+<p>
+Modern beachfront apartment with balcony,
+resort amenities and private parking.
+</p>
+<a class="whatsapp" href="https://wa.me/15708152665">Rent This Property</a>
+</div>
+</div>
+<div class="property">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200">
+<div class="info">
+<h2>Family Residence</h2>
+<p>Charlotte, North Carolina</p>
+<div class="rent">$3,700 / Month</div>
+<div class="features">
+4 Bedrooms • 3 Bathrooms • Garden
+</div>
+<p>
+Beautiful family residence in a quiet neighborhood
+with upgraded kitchen and spacious yard.
+</p>
+<a class="whatsapp" href="https://wa.me/15708152665">Rent This Property</a>
+</div>
+</div>
+<div class="property">
+<img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=1200">
+<div class="info">
+<h2>Luxury Loft</h2>
+<p>Seattle, Washington</p>
+<div class="rent">$3,950 / Month</div>
+<div class="features">
+2 Bedrooms • 2 Bathrooms • City Views
+</div>
+<p>
+Stylish loft apartment with floor-to-ceiling windows,
+designer interiors and premium finishes.
+</p>
+<a class="whatsapp" href="https://wa.me/15708152665">Rent This Property</a>
+</div>
+</div>
+</div>
+</div>
 <footer>
-<p>📞 +1 (570) 815-2665</p>
-<p>📧 helensantanahomes01@gmail.com</p>
-<p>© 2026 Helen Santana Homes</p>
+Helen Santana Homes © 2026
 </footer>
-
 </body>
 </html>
