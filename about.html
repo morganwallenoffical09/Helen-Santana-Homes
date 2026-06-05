@@ -7,82 +7,98 @@
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
-color:#333;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia,serif;
+background:#f8f8f8;
+color:#222;
+line-height:1.8;
+}
+
+header{
+background:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#c9a227;
+}
+
+nav a{
+text-decoration:none;
+margin-left:20px;
+color:#222;
+font-weight:600;
 }
 
 .hero{
-height:60vh;
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600');
-background-size:cover;
-background-position:center;
+height:55vh;
+background:url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=2000') center/cover;
 display:flex;
 justify-content:center;
 align-items:center;
-text-align:center;
-color:white;
 }
 
 .hero h1{
+background:rgba(0,0,0,.6);
+color:white;
+padding:20px 40px;
 font-size:60px;
 }
 
 .container{
 max-width:1200px;
 margin:auto;
-padding:60px 20px;
+padding:80px 20px;
 }
 
-.about-card{
+.section{
 background:white;
 padding:40px;
+margin-bottom:30px;
 border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
-margin-bottom:40px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
-.about-card h2{
-margin-top:0;
+.section h2{
 color:#c9a227;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-margin-top:40px;
-}
-
-.stat{
-background:white;
-padding:30px;
-text-align:center;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.stat h3{
-font-size:40px;
-color:#c9a227;
-margin:0;
+margin-bottom:15px;
 }
 
 .testimonials{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:25px;
-margin-top:40px;
+margin-top:30px;
 }
 
 .testimonial{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+background:#fafafa;
+padding:25px;
+border-radius:10px;
+border-left:5px solid #c9a227;
+}
+
+.whatsapp{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+margin-top:20px;
 }
 
 footer{
@@ -90,7 +106,6 @@ background:#111;
 color:white;
 text-align:center;
 padding:30px;
-margin-top:50px;
 }
 
 </style>
@@ -98,95 +113,103 @@ margin-top:50px;
 
 <body>
 
+<header>
+
+<div class="logo">Helen Santana Homes</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="properties-sale.html">For Sale</a>
+<a href="properties-rent.html">For Rent</a>
+<a href="luxury-villas.html">Luxury Villas</a>
+<a href="gallery.html">Gallery</a>
+</nav>
+
+</header>
+
 <section class="hero">
 <h1>About Helen Santana Homes</h1>
 </section>
 
 <div class="container">
 
-<div class="about-card">
+<div class="section">
 
 <h2>Who We Are</h2>
 
 <p>
-Helen Santana Homes is dedicated to helping clients discover exceptional
-properties across the United States and internationally. Our focus is on
-luxury homes, apartments, villas, investment opportunities, and premium
-real estate experiences.
+Helen Santana Homes is a luxury real estate showcase platform dedicated to helping clients discover exceptional homes, villas, apartments and investment opportunities across the United States and selected international destinations.
 </p>
 
 <p>
-We strive to provide professional service, personalized attention,
-and access to a diverse portfolio of showcase properties.
+Our mission is to present beautiful properties with professionalism, elegance and attention to detail while providing a premium client experience.
 </p>
 
 </div>
 
-<div class="stats">
+<div class="section">
 
-<div class="stat">
-<h3>500+</h3>
-<p>Properties Showcased</p>
-</div>
+<h2>Our Services</h2>
 
-<div class="stat">
-<h3>50+</h3>
-<p>Cities Covered</p>
-</div>
-
-<div class="stat">
-<h3>10+</h3>
-<p>Years Experience</p>
-</div>
-
-<div class="stat">
-<h3>24/7</h3>
-<p>Client Support</p>
-</div>
+<p>✔ Luxury Property Showcases</p>
+<p>✔ Residential Homes</p>
+<p>✔ Rental Properties</p>
+<p>✔ Investment Opportunities</p>
+<p>✔ International Luxury Real Estate</p>
+<p>✔ Private Property Consultations</p>
 
 </div>
 
-<h2 style="text-align:center;margin-top:60px;">
-Client Testimonials
-</h2>
+<div class="section">
+
+<h2>Why Choose Us?</h2>
+
+<p>
+We focus on quality over quantity, showcasing premium properties with detailed information, beautiful presentation and personalized support through direct communication channels.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Client Testimonials</h2>
 
 <div class="testimonials">
 
 <div class="testimonial">
-<p>
-"Outstanding service and beautiful property options.
-The experience was smooth from start to finish."
-</p>
-<strong>— Michael R.</strong>
+"The website was easy to navigate and the property presentations were outstanding."
 </div>
 
 <div class="testimonial">
-<p>
-"Professional, responsive, and knowledgeable.
-Highly recommended."
-</p>
-<strong>— Sarah J.</strong>
+"Professional service and beautiful luxury property selections."
 </div>
 
 <div class="testimonial">
-<p>
-"Found exactly what I was looking for.
-Excellent communication throughout."
-</p>
-<strong>— David T.</strong>
+"A premium experience from beginning to end."
 </div>
+
+</div>
+
+</div>
+
+<div class="section" style="text-align:center;">
+
+<h2>Let's Talk</h2>
+
+<p>
+Interested in learning more about our featured properties?
+</p>
+
+<a class="whatsapp" href="https://wa.me/15708152665">
+Chat With Us On WhatsApp
+</a>
 
 </div>
 
 </div>
 
 <footer>
-
-<p>Helen Santana Homes</p>
-<p>📞 +1 (570) 815-2665</p>
-<p>📧 helensantanahomes01@gmail.com</p>
-<p>© 2026 All Rights Reserved</p>
-
+Helen Santana Homes © 2026
 </footer>
 
 </body>
